@@ -1,6 +1,6 @@
 # Will name it later
 
-Idea is to make a site like imageboard, but user frinendly
+Idea is to make a site like imageboard, but user frinendly.
 
 Features:
 
