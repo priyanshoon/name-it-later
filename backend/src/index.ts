@@ -1,9 +1,8 @@
 import { Hono } from 'hono'
+import feed from './routes/feed.route'
 
 const app = new Hono()
 
-app.get('/', (c) => {
-	return c.json({ "message": "Hello, there" })
-})
+app.route('/feed', feed)
 
 export default app
