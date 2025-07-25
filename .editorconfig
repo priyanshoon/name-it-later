@@ -1,6 +1,6 @@
 root = true
 
-[*.{js,ts,tsx,sql}]
+[*.{js,ts,tsx,sql,json}]
 indent_style = tab
 indent_size = 2
 

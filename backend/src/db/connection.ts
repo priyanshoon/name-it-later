@@ -17,6 +17,7 @@ export async function test_connection() {
 	}
 }
 
+
 export const db = new Kysely<Database>({
 	dialect: new PostgresDialect({ pool })
 })
