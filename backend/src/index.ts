@@ -1,11 +1,7 @@
-import { Hono } from "hono";
-import feed from "./routes/feed.route";
-import { test_connection } from "./db/connection";
+import { Hono } from 'hono'
+import { test_connection } from './db/connection'
 
 test_connection();
-
-const app = new Hono();
-
-app.route("/feed", feed);
+const app = new Hono()
 
 export default app;
