@@ -8,6 +8,7 @@ export async function up(database: Kysely<unknown>): Promise<void> {
 		.addColumn('password', 'text')
 		.addColumn('city', 'varchar(50)')
 		.addColumn('ip_addr', 'text')
+		.addColumn("role", sql`user_role`, (col) => col.notNull().defaultTo("user"))
 		.addColumn('created_at', 'timestamp', (col) => col.defaultTo(sql`now()`).notNull())
 		.execute();
 }
